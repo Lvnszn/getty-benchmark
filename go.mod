@@ -1,13 +1,13 @@
-module .
+module getty-benchmark
 
 go 1.13
 
 require (
-	github.com/AlexStocks/goext v0.3.2 // indirect
-	github.com/dubbogo/getty v1.3.4 // indirect
-	github.com/dubbogo/log4go v1.0.3 // indirect
-	github.com/juju/errors v0.0.0-20200330140219-3fe23663418f // indirect
+	github.com/AlexStocks/goext v0.3.3
+	github.com/apache/dubbo-getty v1.4.7
+	github.com/dubbogo/gost v1.11.23
 	github.com/kavu/go_reuseport v1.5.0 // indirect
-	github.com/panjf2000/gnet v1.1.5 // indirect
-	github.com/tidwall/evio v1.0.7 // indirect
+	github.com/panjf2000/gnet v1.1.5
+	github.com/tidwall/evio v1.0.7
+	github.com/valyala/fasthttp v1.33.0
 )

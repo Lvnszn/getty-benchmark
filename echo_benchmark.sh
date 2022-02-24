@@ -28,11 +28,11 @@ function gobench {
     sleep 1
     echo "*** 10 connections, 30 seconds, 6 byte packets"
     nl=$'\r\n'
-    tcpkali --workers 1 -c 10 -T 30s -m "PING{$nl}" 127.0.0.1:$4
+    tcpkali --workers 1 -c 10 -T 300s -m "PING{$nl}" 127.0.0.1:$4
     echo "--- DONE ---"
     echo ""
 }
 
-gobench "GNET" bin/gnet-echo-server gnet-echo-server/main.go 5001
-gobench "EVIO" bin/evio-echo-server evio-echo-server/main.go 5002
+#gobench "GNET" bin/gnet-echo-server gnet-echo-server/main.go 5001
+#gobench "EVIO" bin/evio-echo-server evio-echo-server/main.go 5002
 gobench "GETTY" bin/getty-echo-server getty-echo-server/main.go 5003
